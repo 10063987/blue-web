@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Layout from '../components/Layout'
 import MyComponent from '../components/MyComponent'
+import Sidebar from '../components/Sidebar'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -14,10 +15,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <Layout title=''>
-        <MyComponent />
 
-      </Layout> */}
+      {/* Sidebar  */}
+      <Sidebar />
+
+      {/* Feed  */}
+
+      {/* Widgets  */}
+
 
       
     </div>
