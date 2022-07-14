@@ -16,6 +16,8 @@ const RegisterPage = () => {
 
   console.log(formInputs)
   // https://javascript.plainenglish.io/how-to-write-a-simple-test-for-your-next-js-app-7e7e83420d7a
+  // https://blog.logrocket.com/testing-error-handling-patterns-next-js/
+
 
   return (
     <div className='page-wrapper'>
