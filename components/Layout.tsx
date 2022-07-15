@@ -34,7 +34,7 @@ const Layout = ({ children, title = 'Default title' }: LayoutProps) => {
             
             <footer>
                 <hr />
-                <span>I'm here to stay (Footer)</span>
+                <span>I`m here to stay (Footer)</span>
             </footer>
         </div>
     </>)
