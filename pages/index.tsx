@@ -30,7 +30,7 @@ const RegisterPage = () => {
                 className='m-2 p-2 text-xs'
                 name={input.name}
                 type={input.type}
-                arial-label={input.ariaLabel}
+                aria-label={input.ariaLabel}
                 placeholder={input.placeholder}
               />
             </div>

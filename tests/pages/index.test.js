@@ -3,7 +3,7 @@ import { render, screen, fireEvent } from '@testing-library/react'
 import { isExportDeclaration } from 'typescript'
 // import Index from '../pages/index'
 
-import RegisterPage from '../pages/index'
+import RegisterPage from '../../pages/index'
 
 const formInputValues = [
     {
@@ -63,7 +63,7 @@ describe('Simple working form', () => {
         const submitButton = screen.getByRole('button', {name: 'Create account'})
 
         formInputValues.forEach((mockValue, index) => {
-            const input = screen.getByLabelText(mockValue.label)
+            const input = screen.getByLabelText(mockValue.label) 
             fireEvent.change(input, { target: {value: mockValue.correctTestValue}})
         })
 
