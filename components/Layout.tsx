@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 type LayoutProps = {
     children: ReactNode
-    title: string
+    title?: string
 }
 
 const Layout = ({ children, title = 'Default title' }: LayoutProps) => {
@@ -18,21 +18,24 @@ const Layout = ({ children, title = 'Default title' }: LayoutProps) => {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
 
-            <header className='bg-red-400'>
-                <nav>
+            <header className='bg-purple-400'>
+                (Navbar)
+                <nav className='flex'>
                     <Link href="/">
-                        <a>Home</a>
+                        <a className='bg-yellow-400 p-2 m-2'>Home</a>
                     </Link>
                     <Link href="/about">
-                        <a>About</a>
+                        <a className='bg-yellow-400 p-2 m-2'>About</a>
+                    </Link>
+                    <Link href='/posts'>
+                        <a className='bg-yellow-400 p-2 m-2'>Posts</a>
                     </Link>
                 </nav>
-                (Navbar)
             </header>
 
             {children}
             
-            <footer>
+            <footer className='bg-blue-500'>
                 <hr />
                 <span>I`m here to stay (Footer)</span>
             </footer>
